@@ -1,0 +1,253 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Koulen", sans-serif;
+    background-color: #FFD382;
+}
+
+.title {
+    color: #E8351C;
+    font-size: 30px;
+    text-shadow: 7px 4px 10px rgba(0, 0, 0, .25);
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    gap: calc(50% - 130px);
+    align-items: center;
+}
+
+.logo {
+    flex: none;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.gallery-item {
+    width: 90%;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.scrollup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: 
+        url(assets/Arrow.svg) center center / 15px no-repeat, 
+        rgba(232, 52, 28, 0.7);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+    transition: .3s;
+}
+
+.scrollup:hover {
+    background: 
+        url(assets/Arrow.svg) center center / 20px no-repeat, 
+        rgba(232, 52, 28, 1);
+}
+
+nav .active {
+    display: block;
+}
+
+@media screen and (min-width: 600px) and (max-width: 959px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(117,30px);
+        row-gap: 0;
+        column-gap: 30px;
+        padding: 10px 30px;
+        margin: 0 auto;
+    }
+
+    .gallery-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .item3 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 16;
+    }
+
+    .item2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 15;
+    }
+
+    .item8 {
+        grid-column: 1 / 2;
+        grid-row: 17 / 34;
+    }
+
+
+    .item5 {
+        grid-column: 2 / 3;
+        grid-row: 16 / 30;
+    }
+
+    .item11 {
+        grid-column: 1 / 2;
+        grid-row: 35 / 47;
+    }
+
+    .item10 {
+        grid-column: 2 / 3;
+        grid-row: 31 / 50;
+    }
+
+    .item12 {
+        grid-column: 1 / 2;
+        grid-row: 48 / 66;
+    }
+
+    .item7 {
+        grid-column: 2 / 3;
+        grid-row: 51 / 69;
+    }
+
+    .item13 {
+        grid-column: 1 / 2;
+        grid-row: 67 / 80;
+    }
+
+    .item9 {
+        grid-column: 2 / 3;
+        grid-row: 70 / 81;
+    } 
+
+    .item6 {
+        grid-column: 1 / 2;
+        grid-row: 81 / 95;
+    }
+
+    .item4 {
+        grid-column: 2 / 3;
+        grid-row: 82 / 95;
+    }
+
+    .item1 {
+        grid-column: 1 / 3;
+        grid-row: 96 / 118;
+    }
+    
+}
+
+@media screen and (min-width: 960px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(89,30px);
+        row-gap: 0;
+        column-gap: 30px;
+        padding: 10px 30px;
+        margin: 0 auto;
+    }
+
+    .gallery-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .item3 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 19;
+    }
+
+    .item2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 17;
+    }
+
+    .item8 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 20;
+    }
+
+    .item5 {
+        grid-column: 1 / 2;
+        grid-row: 20 / 36;
+    }
+
+    .item10 {
+        grid-column: 2 / 3;
+        grid-row: 18 / 40;
+    }
+
+    .item11 {
+        grid-column: 3 / 4;
+        grid-row: 21 / 34;
+    }
+
+    .item12 {
+        grid-column: 1 / 2;
+        grid-row: 37 / 59;
+    }
+
+    .item7 {
+        grid-column: 2 / 3;
+        grid-row: 41 / 62;
+    }
+
+    .item13 {
+        grid-column: 3 / 4;
+        grid-row: 35 / 49;
+    }
+
+    .item9 {
+        grid-column: 3 / 4;
+        grid-row: 50 / 62;
+    } 
+
+    .item6 {
+        grid-column: 1 / 2;
+        grid-row: 60 / 76;
+    }
+
+    .item4 {
+        grid-column: 1 / 2;
+        grid-row: 77 / 90;
+    }
+
+    .item1 {
+        grid-column: 2 / 4;
+        grid-row: 63 / 90;
+    }
+}

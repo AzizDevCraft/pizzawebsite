@@ -1,0 +1,1023 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F4A69C;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Koulen", sans-serif;
+}
+
+nav .fixed-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 35px;
+    z-index: 1000;
+    background-color: #ffd382;
+    border-radius: 0 0 12px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .fixed-bar p {
+    letter-spacing: 5px;
+    color: #000;
+    font-family: "League Gothic", sans-serif;
+    text-transform: uppercase;
+    line-height: 16px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 43px;
+}
+
+.logo img {
+    width: 107px;
+    height: 30px;
+}
+
+.logo p {
+    display: none;
+}
+
+nav .side-bar {
+    max-width: 83%;
+    height: 25px;
+    margin: 8px auto 0 auto;
+    background: rgba(255, 211, 130, .42);
+    border-radius: 33px;
+}
+
+nav .side-bar ul {
+    width: 100%;
+    height: 100%;
+    padding: 0 11px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .side-bar ul .nav-item {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 27px;
+}
+
+nav .navigation .media {
+    display: none;
+}
+
+/* frame 1*/
+header {
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    padding: 43px 0 72px 0;
+    margin-top: 35px;
+}
+
+header .frame1 {
+    margin: 0 89px 0 21px;
+}
+
+.frame1-content .frame1-title {
+    font-size: 37px;
+    line-height: 45px;
+    margin-bottom: 5px;
+    white-space: pre-line;
+}
+
+.frame1-content .frame1-text {
+    line-height: 22px;
+}
+
+.fram1-text-desktop, .frame1-image {
+    display: none;
+}
+
+.container::after {
+    content: "";
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #ffd382;
+    box-shadow: 0 0 50px 25px #ffd382; 
+    filter: blur(15px);
+    position: absolute;
+    right: -50px;
+    top: 15px;
+    z-index: -1;
+} 
+
+.container::before {
+    content: "";
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #ffd382;
+    box-shadow: 0 0 50px 25px #ffd382; 
+    filter: blur(15px);
+    position: absolute;
+    left: -90px;
+    bottom: -40px;
+    z-index: -1; 
+} 
+/* scroll up button */
+.scrollup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: 
+        url(assets/Arrow.svg) center center / 15px no-repeat, 
+        rgba(255, 211, 130, 0.7);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+    transition: .3s;
+}
+
+.scrollup:hover {
+    background: 
+        url(assets/Arrow.svg) center center / 17px no-repeat, 
+        rgba(255, 211, 130, 1);
+}
+
+.btn-nav .active {
+    display: block;
+}
+
+/* frame 2*/
+.frame2 {
+    width: 100%;
+    height: 350px;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), 
+    center center / cover no-repeat url(assets/gallery/image\ 9.jpg);
+}
+
+.frame2 .nav-title {
+    display: block;
+    line-height: 36px;
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 35px;
+    margin-bottom: 43px;
+}
+
+.frame2 h1 {
+    font-size: 40px;
+    line-height: 39px;
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+
+.frame2 h1 span {
+    color: #ffd382;
+}
+
+.frame2 p {
+    line-height: 22px;
+    margin: 0 32px;
+    font-weight: 300;
+}
+
+.frame2 .fram2-text-desktop {
+    display: none;
+}
+
+/* frame 3*/
+
+.frame-menu-title {
+    line-height: 36px;
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 35px;
+    margin-bottom: 43px;
+}
+
+.menu-mobile {
+    height: 500px;
+}
+
+/* Structure de base pour le swiper */
+.menuSwiperMobile {
+    width: 350px; /* Largeur du carrousel */
+    margin: 20px auto;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+/* Conteneur Flexbox pour organiser les éléments */
+.flex-container-mobile {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de se répartir sur plusieurs lignes */
+    justify-content: space-between; /* Espacement uniforme entre les éléments */
+    gap: 20px; /* Espacement entre les éléments */
+    padding: 15px;
+}
+
+/* Les éléments à l'intérieur du Flexbox */
+.flex-item-mobile {
+    flex: 0 1 calc(50% - 20px); /* 2 éléments par ligne */
+    height: 200px; /* Hauteur des éléments */
+    background-color: rgba(255, 211, 130, 0.54);
+    padding: 15px;
+    border-radius: 30px;
+    color: #fff;
+    margin-bottom: 5px; /* Espacement entre les lignes */
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Karantina", system-ui;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------*/
+.flex-container-mobile .active-left {
+    float: left;
+    width: 100%; /* Largeur des slides */
+    z-index: 5;
+}
+
+.active-left img {
+    height: 100%;
+    display: none;
+    width: auto;
+}
+
+/* Styliser le titre et la description */
+.flex-item-mobile .menu-title {
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.flex-item-mobile .menu-description {
+    font-size: 17px;
+    font-weight: 300;
+    width: 80%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.flex-item-mobile img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Styliser la pagination */
+.swiper-pagination {
+    position: relative;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    opacity: 0.5;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.frame3 .swiper-pagination-bullet-active {
+    background-color: #ff6347;
+    width: 20px;
+    border-radius: 10px;
+    opacity: 1;
+    transition: .3s;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+/* frame 4*/
+.insta-title {
+    line-height: 36px;
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 35px;
+    margin-bottom: 43px;
+}
+
+.instaSwiper {
+    width: 80%; /* Le slider occupe 80% de la largeur de l'écran */
+    max-width: 500px; /* Limite la taille à 500px de large */
+    margin: 40px auto; /* Centrer le slider avec des marges */
+    overflow: hidden;
+    position: relative; /* Relative pour que les flèches soient positionnées correctement */
+}
+
+.instaSwiper .swiper-slide img {
+    width: 100%; /* Les images remplissent toute la largeur du conteneur */
+    display: block;
+    border-radius: 10px; /* Coins arrondis pour les images */
+}
+
+/* Masquer les boutons de navigation par défaut de Swiper */
+.swiper-button-next::after, .swiper-button-prev::after {
+    display: none ; /* Masquer totalement les flèches par défaut */
+}
+
+/* Customiser les boutons de navigation personnalisés */
+.insta-next, .insta-prev {
+    position: absolute;
+    top: 50%; /* Centré verticalement */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    border-radius: 50%; /* Rendre les boutons circulaires */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10; /* S'assurer que les boutons sont bien visibles au-dessus des images */
+}
+
+/* Positionner la flèche droite (next) */
+.insta-next {
+    right: 10px; /* À droite du slider */
+}
+
+/* Positionner la flèche gauche (prev) */
+.insta-prev {
+    left: 10px; /* À gauche du slider */
+    transform: rotate(180deg); /* Inverser la flèche */
+}
+
+/* Personnaliser le style des icônes SVG à l'intérieur des boutons */
+.insta-next svg, .insta-prev svg {
+    fill: rgba(255, 255, 255, 0.75); /* Couleur des icônes SVG */
+    width: 30px; /* Ajuster la taille des SVG */
+    height: 30px;
+}
+
+/* Styliser les dots (pagination) */
+.frame4 .swiper-pagination {
+    position: absolute;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc; /* Couleur des dots inactifs */
+    border-radius: 50%; /* Rendre les dots circulaires */
+    margin: 0 5px; /* Espacement entre les dots */
+    opacity: 0.5;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+/* Couleur du dot actif */
+.frame4 .swiper-pagination-bullet-active {
+    background-color: #e8341c; /* Changer la couleur du dot actif (orange dans cet exemple) */
+    opacity: 1; /* Dot actif entièrement visible */
+}
+
+.post-insta {
+    display: none;
+}
+
+/* frame 5*/
+.frame5 {
+    width: 100%;
+}
+
+.frame5 .nav-title {
+    line-height: 36px;
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 35px;
+    margin-bottom: 43px;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.buttons button {
+    background: transparent;
+    border: none;
+    line-height: 36px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button-active {
+    color: #E8351C;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    display: none;
+}
+
+.map-active {
+    display: block;
+}
+
+
+/* footer */
+footer {
+    background-color: #E36B59;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.foot-title {
+    line-height: 27px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer1 ul {
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.footer-item {
+    height: 30px;
+    width: 30px;
+}
+
+.footer1 ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.sep {
+    width: 60%;
+    background-color: #fff;
+    height: 1px;
+    margin: 25px auto;
+    border: none;
+}
+
+.footer2 ul {
+    width: fit-content;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.footer2 ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.footer2 ul a:hover {
+    text-decoration: underline;
+}
+
+.footer3 ul {
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.footer4 {
+    margin: 30px auto 20px auto;
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    nav .fixed-bar {
+        height: 45px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    nav .fixed-bar p {
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+    nav .navigation {
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 70px auto 0 auto;
+    }
+
+    .logo {
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo p {
+        display: block;
+        font-size: 20px;
+        color: #E8351C;
+        line-height: 31px;
+        font-family: "Aref Ruqaa", serif;
+    }
+
+    nav .navigation .side-bar {
+        width: 600px;
+        height: fit-content;
+        background: transparent;
+        margin: 0;
+        margin:0 20px;
+    }
+
+    .navigation .side-bar ul {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navigation .side-bar ul .nav-item {
+        font-size: 18px;
+        line-height: 27px;
+        white-space: nowrap;
+        flex-shrink: -1;
+    }
+
+    nav .navigation .media {
+        display: block;
+    }
+
+    nav .navigation .media ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav .navigation .media ul .media-item {
+        width: 43px;
+        height: 43px;
+    }
+
+    nav .navigation .media ul .media-item img {
+        width: 100%;
+        height: 100%;
+    }
+} 
+
+@media screen and (min-width: 1000px) {
+
+    body {
+        font-size: 20px;
+    }
+
+    nav .fixed-bar {
+        height: 60px;
+        border-radius: 0 0 18px 18px;
+    }
+
+    nav .fixed-bar p {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    nav .navigation {
+        max-width: 1300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 107px auto 0 auto;
+    }
+
+    .logo { 
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo p {
+        display: block;
+        font-size: 40px;
+        color: #E8351C;
+        line-height: 63px;
+        font-family: "Aref Ruqaa", serif;
+    }
+
+    nav .navigation .side-bar {
+        width: 750px;
+        height: fit-content;
+        background: transparent;
+        margin: 0;
+    }
+
+    .navigation .side-bar ul {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navigation .side-bar ul .nav-item {
+        font-size: 32px;
+        line-height: 58px;
+        white-space: nowrap;
+        flex-shrink: -1;
+        transition: .2s cubic-bezier(0.13, 0.14, 0.4, 1.78);
+    }
+
+    .navigation .side-bar ul .nav-item:hover {
+        color: #ffd382;
+        transform: scale(1.15);
+    }
+
+    nav .navigation .media {
+        display: block;
+    }
+
+    nav .navigation .media ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* frame 1*/
+
+    .container {
+        position: relative;
+        padding: 10px 0 100px 0;
+        margin-top: 15px;
+    }
+
+    header .frame1 {
+        display: flex;
+        margin: 0 0 0 90px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .frame1 .frame1-content{
+        width: 744px;
+        height: fit-content;
+    }
+
+    .frame1-content .frame1-title {
+        font-size: 90px;
+        line-height: 80px;
+        font-weight: 400;
+    }
+
+    .change-color-desktop {
+        color: #ffd382;
+    }   
+    
+    .frame1-content .frame1-text {
+        display: none;
+    }
+
+    .frame1-content .fram1-text-desktop {
+        display: block;
+        line-height: 30px;
+        font-weight: 200;
+    }
+
+    .frame1-image {
+        display: block;
+    }
+
+    .container::after {
+        content: "";
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background: rgba(255, 211, 130, 0.8);
+        box-shadow: 0 0 50px 25px rgba(255, 211, 130, 0.6); 
+        filter: blur(10px);
+        position: absolute;
+        right: -60px;
+        top: 120px;
+        z-index: -1;
+    } 
+    
+    .container::before {
+        content: "";
+        display: none;
+    } 
+
+    .frame2 {
+        width: 100%;
+        height: 100vh;
+        background: 
+        linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), 
+        center center / cover no-repeat url(assets/image\ de\ fond.jpg);
+    }
+
+    .frame2 .nav-title {
+        line-height: 145px;
+        font-size: 80px;
+        font-weight: 400;
+        padding-top: 64px;
+        margin-bottom: 130px;
+    }
+
+    .frame2 h1 {
+        font-size: 100px;
+        max-width: 1115px;
+        line-height: 90px;
+        text-align: left;
+        margin: 0 0 30px 90px;
+        font-weight: 500;
+    }
+
+    .frame2 .fram2-text-mobile{
+        display: none;
+    }
+
+    .frame2 .fram2-text-desktop {
+        margin-left: 90px;
+        max-width: 655px;
+        display: block;
+        line-height: 30px;
+        font-weight: 300;
+    }
+
+    /* frame 3*/
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-desktop {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .frame-menu-title {
+        line-height: 145px;
+        font-size: 80px;
+        font-weight: 400;
+        padding-top: 64px;
+        margin-bottom: 60px;
+    }
+
+    .menu {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    /* Structure de base pour le swiper */
+    .menuSwiperDesktop {
+        width: 75%; /* Le slider occupe 75% de la largeur */
+        margin: 20px auto;
+    }
+    
+    /* Conteneur Flexbox pour organiser les éléments */
+    .flex-container-desktop {
+        display: flex;
+        flex-wrap: wrap; /* Permet aux éléments de se répartir sur plusieurs lignes */
+        justify-content: space-between; /* Espacement uniforme entre les éléments */
+        gap: 40px; /* Espacement entre les éléments */
+        padding: 15px;
+    }
+    
+    /* Les éléments à l'intérieur du Flexbox */
+    .flex-item-desktop {
+        flex: 0 1 calc(33.333% - 40px); /* 3 éléments par ligne */
+        background-color: rgba(255, 211, 130, 0.54);
+        padding: 20px;
+        border-radius: 30px;
+        color: #fff;
+        margin-bottom: 10px; /* Espacement entre les lignes */
+        font-size: 35px;
+        line-height: 35px;
+        font-family: "Karantina", system-ui;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Styliser le titre et la description */
+    
+    .flex-item-desktop .menu-title {
+        width: 80%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: left;
+    }
+    
+    .flex-item-desktop .menu-description {
+        width: 80%;
+        font-size: 30px;
+        font-weight: 300;
+        text-align: left;
+    }
+    
+    .flex-item-desktop img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .flex-item-desktop:hover .menu-description, .flex-item-desktop:hover .menu-title {
+        display: none;
+    }
+    
+    .flex-item-desktop:hover img {
+        width: 100%;
+    }
+    
+    /* Customiser les flèches du carrousel */
+    .frame3 .menu-next-desktop, .frame3 .menu-prev-desktop {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 10;
+    }
+    
+    .frame3 .menu-next-desktop {
+        right: 40px;
+    }
+    
+    .frame3 .menu-prev-desktop {
+        left: 40px;
+    }
+    
+    /* Styliser les flèches */
+    .frame3 .swiper-button-next::after, .frame3 .swiper-button-prev::after {
+        display: block;
+        color: #DC543F;
+        font-size: 35px;
+    }
+    
+    /* Styliser les flèches au survol */
+    .swiper-button-next:hover::after, .swiper-button-prev:hover::after {
+        transform: scale(1.2);
+    }
+    
+    /* Styliser la pagination */
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: #ccc;
+        border-radius: 50%;
+        margin: 0 5px;
+        opacity: 0.5;
+        transition: background-color 0.3s, opacity 0.3s;
+        position: relative;
+        bottom: 25px;
+        transition : all 0.3s ease;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background-color: #ff6347;
+        width: 25px;
+        border-radius: 10px;
+        opacity: 1;
+        transition: .3s;
+    }
+
+    /* frame 4*/
+    .insta-title {
+        line-height: 145px;
+        font-size: 80px;
+        font-weight: 400;
+        padding-top: 64px;
+        margin-bottom: 130px;
+    }
+
+    .instaSwiper {
+        display: none;
+    }
+
+    .post-insta {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    /* frame 5*/
+    .frame5 .nav-title {
+        line-height: 145px;
+        font-size: 80px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    .buttons button {
+        font-size: 45px;
+        line-height: 75px;
+    }
+
+    .map {
+        height: 460px;
+        display: none;
+    }
+
+    .map-active {
+        display: block;
+    }
+
+    /* footer */
+    footer {
+        padding-top: 70px;
+    }
+
+    footer .line {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .foot-title {
+        font-size: 32px;
+        line-height: 55px;
+        margin-bottom: 20px;
+    }
+
+    .sep {
+        transform: rotate(90deg);
+        width: 10%;
+        margin: 70px 0 0 0;
+    }
+
+    .footer2 h2 {
+        margin-bottom: 0;
+    }
+}

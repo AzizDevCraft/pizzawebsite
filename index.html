@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaGram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Inclure Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="fixed-bar">
+                <p>open 7/7 from 11 am to Midnight</p>
+            </div>
+            <div class="navigation">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
+                    <p class="slogan">
+                        كل شيء عندنا غرام
+                    </p>
+                </div>
+                <div class="side-bar">
+                    <ul>
+                        <li><a href="#menu" class="nav-item">Menu</a></li>
+                        <li><a href="#who-we-are" class="nav-item">Who we are</a></li>
+                        <li><a href="#where-are-we" class="nav-item">Where are we</a></li>
+                        <li><a href="gallery.html" class="nav-item">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="media">
+                    <ul>
+                        <li><a href="https://www.facebook.com/PizzagramTunisie/" class="media-item" target="_blank"><img src="assets/facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://www.instagram.com/pizzagramtunisie/" class="media-item" target="_blank"><img src="assets/instagram.png" alt="instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <section class="frame1">
+                <div class="frame1-content">
+                    <h1 class="frame1-title">
+                        the tastiest & 
+                        <span class="change-color-desktop">best pizza</span> in town</h1>
+                    <p class="frame1-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi pariatur te.</p>
+                    <p class="fram1-text-desktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in voluptatibus consequuntur commodi consequatur labore a non. Suscipit, qui quo doloribus consectetur doloremque voluptatem.</p>
+                </div>
+                <div class="frame1-image">
+                    <img src="assets/image-frame1.png">
+                </div>
+            </section>
+        </div>
+    </header>
+    <div class="btn-nav">
+        <div class="scrollup"></div>
+    </div>
+    <section class="frame2" id="who-we-are">
+        <h3 class="nav-title">who we are</h3>
+        <h1>Perfect companion to your <span class="change-color">PIZZA adventure</span></h1>
+        <p class="fram2-text-mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        <p class="fram2-text-desktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in voluptatibus consequuntur commodi consequatur labore a non. Suscipit, qui quo doloribus consectetur doloremque voluptatem.</p>
+    </section>
+    <section class="frame3" id="menu">
+        <h3 class="frame-menu-title">menu</h3>
+        <div class="menu-mobile">
+            <!-- Swiper pour un menu divisé en deux lignes avec 6 éléments par slide -->
+            <div class="swiper menuSwiperMobile">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 avec 4 éléments -->
+                    <div class="swiper-slide">
+                        <div class="flex-container-mobile">
+                            <div class="flex-item-mobile active-left">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-mobile">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-mobile">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-mobile">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 avec 4 éléments -->
+                    <div class="swiper-slide">
+                        <div class="flex-container-mobile">
+                            <div class="flex-item-mobile">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-mobile">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-mobile">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-mobile">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 avec 4 éléments -->
+                    <div class="swiper-slide">
+                        <div class="flex-container-mobile">
+                            <div class="flex-item-mobile">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-mobile">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-mobile">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-mobile">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 4 avec les 4 derniers éléments -->
+                    <div class="swiper-slide">
+                        <div class="flex-container-mobile">
+                            <div class="flex-item-mobile">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-mobile">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-mobile">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-mobile">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination pour le menu -->
+            <div class="swiper-pagination menu-pagination-mobile"></div>
+        </div>
+        <div class="menu-desktop">
+             <!-- Swiper pour un menu divisé en deux lignes avec 6 éléments par slide -->
+            <div class="swiper menuSwiperDesktop">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 avec 6 éléments -->
+                    <div class="swiper-slide">
+                        <div class="flex-container-desktop">
+                            <div class="flex-item-desktop">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-desktop">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-desktop">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-desktop">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-desktop">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-desktop">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 avec 6 éléments -->
+                    <div class="swiper-slide">
+                        <div class="flex-container-desktop">
+                            <div class="flex-item-desktop">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-desktop">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-desktop">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-desktop">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-desktop">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-desktop">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 avec les 4 derniers éléments -->
+                    <div class="swiper-slide">
+                        <div class="flex-container-desktop">
+                            <div class="flex-item-desktop">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-desktop">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-desktop">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                            <div class="flex-item-desktop">
+                                <img class="menu-image" src="assets/image-menu.png">
+                                <h3 class="menu-title">Pizza tonno</h3>
+                                <p class="menu-description">Sauce tomate, mozarella, thon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Flèches pour le menu -->
+            <div class="swiper-button-next menu-next-desktop"></div>
+            <div class="swiper-button-prev menu-prev-desktop"></div>
+
+
+            <!-- Pagination pour le menu -->
+            <div class="swiper-pagination menu-pagination-desktop"></div>
+        </div>
+    </section>
+
+    <div class="frame4">
+        <h3 class="insta-title">It's time to follow</h3>
+        <div class="instaSwiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/pizzagramtunisie/" target="_blank"><img src="assets/insta1.png"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/pizzagramtunisie/" target="_blank"><img src="assets/video insta.png"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/pizzagramtunisie/" target="_blank"><img src="assets/insta2.png"></a>
+                </div>
+            </div>
+    
+            <!-- Pagination (dots) sera générée ici automatiquement -->
+            <div class="swiper-pagination insta-pagination"></div>
+    
+            <!-- Flèches de navigation -->
+            <div class="swiper-button-next insta-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <path d="M10,20A10,10,0,1,0,0,10,10,10,0,0,0,10,20ZM8.711,4.3l5.7,5.766L8.7,15.711,7.3,14.289l4.289-4.242L7.289,5.7Z"/>
+                </svg>
+            </div>
+            <div class="swiper-button-prev insta-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <path d="M10,20A10,10,0,1,0,0,10,10,10,0,0,0,10,20ZM8.711,4.3l5.7,5.766L8.7,15.711,7.3,14.289l4.289-4.242L7.289,5.7Z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="post-insta">
+            <a href="https://www.instagram.com/pizzagramtunisie/" target="_blank"><img src="assets/insta1.png"></a>
+            <a href="https://www.instagram.com/pizzagramtunisie/" target="_blank"><img src="assets/video insta.png"></a>
+            <a href="https://www.instagram.com/pizzagramtunisie/" target="_blank"><img src="assets/insta2.png"></a>
+        </div>
+    </div>
+    <section class="frame5" id="where-are-we">
+        <h3 class="nav-title">where are we</h3>
+        <div class="buttons">
+            <button class="button-active marsa">la marsa</button>
+            <button class="aouina">l'aouina</button>
+            <button class="menzeh5">menzeh 5</button>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51060.99782307006!2d10.256402448632805!3d36.88287500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2b56f17ff692f%3A0x8ea60ace2019aed8!2sPizzagram!5e0!3m2!1sfr!2stn!4v1729066642486!5m2!1sfr!2stn" class="map map-active" id="marsa" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51074.64019125253!2d10.178052848632811!3d36.86246889999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2cb004edc00df%3A0x4394500009c7aaeb!2sPIZZAGRAM%20L&#39;%20AOUINA!5e0!3m2!1sfr!2stn!4v1729066526201!5m2!1sfr!2stn" class="map" id="aouina" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102162.17331574165!2d10.018329620361333!3d36.85282297530326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd353ee5f4fdbf%3A0x72bbf35a6c2b1b6a!2sPizzagram%20-%20Menzah%205!5e0!3m2!1sfr!2stn!4v1729066255528!5m2!1sfr!2stn" class="map" id="menzeh5" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+    <footer>
+        <div class="line">
+            <section class="footer1">
+                <h2 class="foot-title">CONTACT US</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/pizzagramtunisie/" class="foot1-item" target="_blank"><img src="assets/instagram.png" alt="instagram"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/PizzagramTunisie/" class="footer-item" target="_blank"><img src="assets/facebook.png" alt="facebook"></a>
+                    </li>
+                    <li>
+                        <a href="tel:+216 71 000 000" class="footer-item"><img src="assets/Phone.png" alt="phone"></a>
+                    </li>
+                    <li>
+                        <a href="mailto:pizzagramtn@gmail.com" class="footer-item"><img src="assets/Email.png" alt="mail"></a>
+                    </li>
+                </ul>
+            </section>
+            <hr class="sep">
+            <section class="footer2">
+                <h2 class="foot-title">Legal Information</h2>
+                <ul>
+                    <li><a href="mention.html">Legal Notice</a></li>
+                    <li><a href="confidentiel.html">Privacy Policy</a></li>
+                </ul>    
+            </section>
+            <hr class="sep">
+            <section class="footer3">
+                <h2 class="foot-title">DELIVERY</h2>
+                <ul>
+                    <li>
+                        <a href="#" class="footer-item"><img src="assets/glovo.png" alt="Glovo"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-item"><img src="assets/kool.png" alt="Kool"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-item"><img src="assets/yassir.png" alt="Yassir"></a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <section class="footer4">
+            <p>© 2024 by Pizzagram. Proudly created with Quarz</p>
+        </section>
+    </footer>
+
+    <!-- Inclure Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
